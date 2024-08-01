@@ -1,0 +1,314 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos para el encabezado */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilos para el banner */
+
+.banner {
+    text-align: center;
+
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para la sección de Productos */
+
+.productos {
+    padding: 20px 0;
+}
+
+
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Mostrar elementos en columna */
+    align-items: center; /* Centrar elementos horizontalmente */
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Borde para separar visualmente cada elemento */
+    padding: 10px;
+    max-width: 300px; /* Ajustar el ancho máximo según sea necesario */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+}
+
+.image-container img {
+    max-width: 100%; /* Imagen dentro del contenedor ajustada al ancho máximo */
+    height: auto; /* Ajuste automático de altura */
+    margin-bottom: 10px; /* Espacio entre imagen y descripción */
+}
+
+.image-container .description {
+    text-align: center; /* Centrar el texto dentro del contenedor */}
+
+.producto-titulo {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.producto-precio {
+    font-size: 16px;
+    color: green;
+}
+
+.producto-agregar {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.producto-agregar:hover {
+    background-color: #555;
+}
+
+/* Estilos para la sección "Sobre Nosotros" */
+
+.sobrenosotros {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.left-column {
+    flex: 1;
+    text-align: center;
+}
+
+.right-column {
+    flex: 2;
+    padding-left: 40px;
+}
+
+.right-column h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Estilos para el pie de página */
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--clr-main);
+}
+
+aside {
+    padding: 2rem;
+    padding-right: 0;
+    color: var(--clr-white);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.boton-menu {
+    background-color: transparent;
+    border: 0;
+    color: var(--clr-white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    font-size: .85rem;
+    width: 100%;
+}
+/*
+.main{
+   background-color: black;
+   margin: 1rem;
+   border-radius: 2rem; 
+   padding: 2rem;
+
+}
+   */
+.productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+}
+.image-container{max-width: 100%;
+    height: auto;
+
+}
+
+.titulo-principal{
+    color: var();
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+/* Estilos para la sección "Sobre Nosotros" */
+.sobrenosotros {
+    display: flex;
+    justify-content: space-around; /* Distribuye las columnas a lo largo del contenedor */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 50px 20px; /* Espaciado interior */
+}
+
+/* Estilos para la columna izquierda (imagen) */
+.left-column {
+    flex: 1; /* Ocupa 1 parte del espacio disponible */
+    margin-right: 20px; /* Espacio entre las columnas */
+}
+
+/* Estilos para la columna derecha (texto) */
+.right-column {
+    flex: 2; /* Ocupa 2 partes del espacio disponible */
+}
+
+/* Estilo para la imagen */
+.imagen {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+/* Estilos para el título */
+.right-column h2 {
+    font-size: 2.5rem;
+    color: #333; /* Color del texto */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+/* Estilos para el párrafo */
+.right-column p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666; /* Color del texto */
+}
+.container-icon{
+    position: relative;
+}
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+.icon-close:hover{
+    stroke: red;
+    cursor: pointer;
+}
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
