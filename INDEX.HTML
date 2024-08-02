@@ -15,7 +15,8 @@
         <!-- Encabezado -->
         <header>
             <div class="encabezado">
-                <nav>
+                
+                <div class="menu">
                     <ul>
                         <li><a href="#index">Inicio</a></li>
                         <li><a href="#productos">Productos</a></li>
@@ -24,23 +25,10 @@
                         <li><a href="contact.html">Contacto</a></li>
                         <li><a href="carrito.html">Carrito<span class="numero"></span></a></li>
                     </ul>
-                </nav>
-            </div>
-            
-        </header>
-
-        <!-- Contenido principal -->
-        <main>
-            
-            <!-- Sección de Banner -->
-            <section id="index" class="index">
-                <div class="banner">
-                    <img class="imagen" src="img/banner.PNG" alt="banerinicial">
                 </div>
-                <h3 class="titulo-principal">Todos los productos</h3>
-
-            </section>
-
+                <main style="margin-top: 80px;">
+               
+            </div>
             <div class="container-icon">
 				<div class="container-cart-icon">
 					<svg
@@ -84,10 +72,31 @@
 									d="M6 18L18 6M6 6l12 12"
 								/>
 							</svg>
-						</div>  
-                    </div>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+        </header>
+
+        <!-- Contenido principal -->
+        <main>
+            
+            <!-- Sección de Banner -->
+            <section id="index" class="index">
+                <div class="banner">
+                    <img class="imagen" src="img/banner.PNG" alt="banerinicial">
                 </div>
-            </div>      
+                <h3 class="titulo-principal">Todos los productos</h3>
+
+            </section>
+
+            
 
             <!-- Sección de Productos -->
             <section id="productos" class="productos">
@@ -197,6 +206,7 @@
             <p>Derechos de autor &copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
         </footer>
     </div>
+    <script src="INDEX.JS"></script>
 </body>
 
 </html>

@@ -18,33 +18,49 @@ body {
 
 /* Estilos para el encabezado */
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0 40px 0;
+.encabezado {
+    background-color: #333; /* Fondo oscuro para el encabezado */
+    color: #fff; /* Texto en blanco para contraste */
+    padding: 0.1px 0.5px; /* Espaciado más uniforme alrededor */
+    text-align: center; /* Centra el texto */
+    display: flex; /* Usa flexbox para alinear elementos */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    align-items: center; /* Centra los elementos verticalmente */
+    position: fixed; /* Fija el encabezado en la parte superior */
+    
+    width: 100%; /* Asegura que el encabezado ocupe el ancho completo */
+    top: 0; /* Ubica el encabezado en la parte superior */
+    left: 0; /* Alinea el encabezado a la izquierda */
+    z-index: 1000; /* Asegura que el encabezado esté sobre otros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil para profundidad */
 }
 
 
 
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.encabezado .menu {
+    display: flex; /* Muestra los elementos del menú en una fila */
+    gap: 20px; /* Espacio entre los elementos del menú */
+    list-style: none; /* Elimina los números predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    margin: 0; /* Elimina el margen predeterminado */
 }
 
-header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+.encabezado .menu li {
+    display: inline; /* Alinea los elementos de lista en línea */
 }
 
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.encabezado .menu a {
+    color: #fff; /* Color blanco para los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 1em; /* Tamaño de fuente estándar */
+    padding: 5px 10px; /* Espaciado interno para los enlaces */
+    transition: color 0.3s, background-color 0.3s; /* Suaviza los cambios de color */
+}
+
+.encabezado .menu a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor por encima */
+    background-color: #555; /* Fondo gris más claro al pasar el cursor */
+    border-radius: 5px; /* Bordes redondeados para el fondo del enlace */
 }
 
 /* Estilos para el banner */
