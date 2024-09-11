@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,202 +12,202 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- Encabezado -->
-        <header>
-            <div class="encabezado">
-                
-                <div class="menu">
-                    <ul>
-                        <li><a href="#index">Inicio</a></li>
-                        <li><a href="#productos">Productos</a></li>
-                        <li><a href="#compras">Compras</a></li>
-                        <li><a href="#sobrenosotros">Sobre nosotros</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
-                        <li><a href="carrito.html">Carrito<span class="numero"></span></a></li>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">SAN BENITO FARM</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item"><a class="nav-link" href="#sobrenosotros">Sobre nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contactenos">Contacto</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carrito.html">Carrito<span class="numero"></span></a>
+                        </li>
                     </ul>
                 </div>
-                <main style="margin-top: 80px;">
-               
+                <div class="container-icon">
+                    <div class="container-cart-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg>
+                        <div class="count-products">
+                            <span id="contador-productos">0</span>
+                        </div>
+                    </div>
+                    <div class="container-cart-products hidden-cart">
+                        <div class="row-product hidden">
+                            <div class="cart-product">
+                                <div class="info-cart-product">
+                                    <span class="cantidad-producto-carrito"></span>
+                                    <p class="titulo-producto-carrito"></p>
+                                    <span class="precio-producto-carrito"></span>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="icon-close">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cart-total hidden">
+                            <h3>Total:</h3>
+                            <span class="total-pagar"></span>
+                        </div>
+                        <p class="cart-empty">El carrito está vacío</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">            
+            <img class="granja" src="img/BANNER.png">
+
+
+        </section>
+
+
+
+         <!-- Sección "Sobre Nosotros" -->
+       <section id="sobrenosotros" class="sobrenosotros">
+       
+        </div>
+        <div class="right-column">
+            <h2>Granja San Benito</h2>
+            <p>¡Bienvenido a nuestra página web!
+                Somos una granja comprometida con el cultivo y comercialización de productos completamente
+                libres de químicos. En nuestro hogar virtual, te invitamos a explorar nuestro apasionante mundo
+                agrícola, donde cada fruto y cada verdura reflejan el cuidado y la dedicación que ponemos en
+                cada etapa de su crecimiento. Nuestro compromiso con la salud y el bienestar se traduce en
+                alimentos frescos y naturales que no solo alimentan el cuerpo, sino que también alimentan el
+                alma.
+                Descubre cómo nuestras prácticas sostenibles y respetuosas con el medio ambiente no solo
+                protegen la tierra, sino que también promueven la biodiversidad y la calidad de vida en nuestra
+                comunidad. Ya sea que seas un entusiasta de la cocina, un amante de la naturaleza o simplemente
+                alguien que valora los alimentos de calidad, te invitamos a explorar todo lo que nuestra granja
+                tiene para ofrecer.
+                ¡Gracias por visitarnos y ser parte de nuestra historia de crecimiento y sostenibilidad!</p>
+        </div>
+    </section>
+
+        <!-- Sección de Productos -->
+        <section id="productos" class="productos">
+            <h1>Productos</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/perejiñ.jpg" alt="Perejil">
+                            <div class="description">
+                                <h3 class="producto-titulo">Perejil</h3>
+                                <p class="producto-precio">2500</p>
+                                <button class="producto-agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/huevos.jpg" alt="Huevos">
+                            <div class="description">
+                                <h3 class="producto-titulo">Huevos</h3>
+                                <p class="producto-precio">17500</p>
+                                <button class="producto-agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/zanahoria.jpg" alt="Zanahoria">
+                            <div class="description">
+                                <h3 class="producto-titulo">Zanahoria</h3>
+                                <p class="producto-precio">3500</p>
+                                <button class="producto-agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/fresas.jpg" alt="Fresas">
+                            <div class="description">
+                                <h3 class="producto-titulo">Fresas</h3>
+                                <p class="producto-precio">5500</p>
+                                <button class="producto-agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/pollo.jpg" alt="Pollo">
+                            <div class="description">
+                                <h3 class="producto-titulo">Pollo</h3>
+                                <p class="producto-precio">30500</p>
+                                <button class="producto-agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/pepinos.jpg" alt="Pepinos">
+                            <div class="description">
+                                <h3 class="producto-titulo">Pepinos</h3>
+                                <p class="producto-precio">2500</p>
+                                <button class="producto-agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="img/calabaza.jpg" alt="Calabaza">
+                            <div class="description">
+                                <h3 class="producto-titulo">Calabaza</h3>
+                                <p class="producto-precio">5500</p>
+                                <button class="producto-agregar">Agregar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="container-icon">
-				<div class="container-cart-icon">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="icon-cart"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-						/>
-					</svg>
-					<div class="count-products">
-						<span id="contador-productos">0</span>
-					</div>
-				</div>
+        </section>
 
-				<div class="container-cart-products hidden-cart">
-					<div class="row-product hidden">
-						<div class="cart-product">
-							<div class="info-cart-product">
-								<span class="cantidad-producto-carrito">1</span>
-								<p class="titulo-producto-carrito">Zapatos Nike</p>
-								<span class="precio-producto-carrito">$80</span>
-							</div>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="1.5"
-								stroke="currentColor"
-								class="icon-close"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M6 18L18 6M6 6l12 12"
-								/>
-							</svg>
-						</div>
-					</div>
+      
+    <section id="contactenos">
+        <div class="contact-info">
+            <h2>Contáctenos</h2>
+            <p>Estamos aquí para ayudarte. Completa el formulario a continuación o usa la información de contacto que se muestra.</p>
+            <ul>
+                <li><strong>Dirección:</strong> Chiquinquira</li>
+                <li><strong>Teléfono:</strong> +123 456 7890</li>
+                <li><strong>Correo electrónico:</strong> sanbenitofarm@ejemplo.com</li>
+            </ul>
+        </div>
+        <div class="contact-form">
+            <h3>Envíanos un mensaje</h3>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-					<div class="cart-total hidden">
-						<h3>Total:</h3>
-						<span class="total-pagar">$200</span>
-					</div>
-					<p class="cart-empty">El carrito está vacío</p>
-				</div>
-			</div>
-        </header>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
 
-        <!-- Contenido principal -->
-        <main>
-            
-            <!-- Sección de Banner -->
-            <section id="index" class="index">
-                <div class="banner">
-                    <img class="imagen" src="img/banner.PNG" alt="banerinicial">
-                </div>
-                <h3 class="titulo-principal">Todos los productos</h3>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-            </section>
-
-            
-
-            <!-- Sección de Productos -->
-            <section id="productos" class="productos">
-                
-                <div class="image-container">
-                    <img src="img/perejiñ.jpg" alt="producto-imagen">
-                    <div class="description">
-                        <h3 class="producto-titulo">Perejil</h3>
-                        <p class="producto-precio">2.500</p>
-                        <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-
-                <div class="image-container">
-                    <img src="img/huevos.jpg" alt="Foto 2">
-                    <div class="description">
-                        <h3 class="producto-titulo">Huevos</h3>
-                        <p class="producto-precio">17.500</p>
-                            <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-
-                <div class="image-container">
-                    <img src="img/zanahoria.jpg" alt="Foto 3">
-                    <div class="description">
-                        <h3 class="producto-titulo">Zanahoria</h3>
-                        <p class="producto-precio">3.500</p>
-                            <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-
-                <div class="image-container">
-                    <img src="img/fresas.jpg" alt="Foto 3">
-                    <div class="description">
-                        <h3 class="producto-titulo">Fresas</h3>
-                        <p class="producto-precio">5.500</p>
-                            <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+</main>
 
 
-                <div class="image-container">
-                    <img src="img/pollo.jpg" alt="Foto 3">
-                    <div class="description">
-                        <h3 class="producto-titulo">pollo</h3>
-                        <p class="producto-precio">30.500</p>
-                            <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-
-                <div class="image-container">
-                    <img src="img/pepinos.jpg" alt="Foto 3">
-                    <div class="description">
-                        <h3 class="producto-titulo">pepinos</h3>
-                        <p class="producto-precio">2.500</p>
-                            <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-
-                <div class="image-container">
-                    <img src="img/calabaza.jpg" alt="Foto 3">
-                    <div class="description">
-                        <h3 class="producto-titulo">Calabaza</h3>
-                        <p class="producto-precio">5.500</p>
-                            <button class="producto-agregar">Agregar</button>
-                    </div>
-                </div>
-
-                <!-- Agrega más div.image-container según sea necesario -->
-            </section>
-
-            <!-- Sección "Sobre Nosotros" -->
-            <section id="sobrenosotros" class="sobrenosotros">
-                <div class="left-column">
-                    <img class="imagen" src="img/apples-1004886_1280.jpg" alt="imagen">
-                </div>
-                <div class="right-column">
-                    <h2>Granja San Benito</h2>
-                    <p>¡Bienvenido a nuestra página web!
-                        Somos una granja comprometida con el cultivo y comercialización de productos completamente
-                        libres de químicos. En nuestro hogar virtual, te invitamos a explorar nuestro apasionante mundo
-                        agrícola, donde cada fruto y cada verdura reflejan el cuidado y la dedicación que ponemos en
-                        cada etapa de su crecimiento. Nuestro compromiso con la salud y el bienestar se traduce en
-                        alimentos frescos y naturales que no solo alimentan el cuerpo, sino que también alimentan el
-                        alma.
-                        Descubre cómo nuestras prácticas sostenibles y respetuosas con el medio ambiente no solo
-                        protegen la tierra, sino que también promueven la biodiversidad y la calidad de vida en nuestra
-                        comunidad. Ya sea que seas un entusiasta de la cocina, un amante de la naturaleza o simplemente
-                        alguien que valora los alimentos de calidad, te invitamos a explorar todo lo que nuestra granja
-                        tiene para ofrecer.
-                        ¡Gracias por visitarnos y ser parte de nuestra historia de crecimiento y sostenibilidad!</p>
-                </div>
-            </section>
-
-            <section id="compras" class="compras1">
-                
-                <div class="right-column">
-                    <h2>Compras</h2>
-                    <p></p>
-                </div>
-            </section>
-        </main>
-
-
-        <!-- Pie de página -->
-        <footer>
-            <p>Derechos de autor &copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
-        </footer>
-    </div>
-    <script src="INDEX.JS"></script>
+<!-- Pie de página -->
+<footer>
+    <p>Derechos de autor &copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+</footer>
+</div>
+<script src="INDEX.JS"></script>
 </body>
 
 </html>

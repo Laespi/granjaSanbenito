@@ -1,330 +1,367 @@
-/* Estilos generales */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
-}
+/* Estilos Generales */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #f30505;
 }
 
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-/* Estilos para el encabezado */
+header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
 
-.encabezado {
-    background-color: #333; /* Fondo oscuro para el encabezado */
-    color: #fff; /* Texto en blanco para contraste */
-    padding: 0.1px 0.5px; /* Espaciado más uniforme alrededor */
-    text-align: center; /* Centra el texto */
-    display: flex; /* Usa flexbox para alinear elementos */
-    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
-    align-items: center; /* Centra los elementos verticalmente */
-    position: fixed; /* Fija el encabezado en la parte superior */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    line-height: 45px; 
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
     
-    width: 100%; /* Asegura que el encabezado ocupe el ancho completo */
-    top: 0; /* Ubica el encabezado en la parte superior */
-    left: 0; /* Alinea el encabezado a la izquierda */
-    z-index: 1000; /* Asegura que el encabezado esté sobre otros elementos */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil para profundidad */
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+   
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
 }
 
 
-
-.encabezado .menu {
-    display: flex; /* Muestra los elementos del menú en una fila */
-    gap: 20px; /* Espacio entre los elementos del menú */
-    list-style: none; /* Elimina los números predeterminados */
-    padding: 0; /* Elimina el relleno predeterminado */
-    margin: 0; /* Elimina el margen predeterminado */
+.navbar-nav .nav-link:hover {
+    background-color: #bff3c1;
+    border-radius: 5px;
 }
 
-.encabezado .menu li {
-    display: inline; /* Alinea los elementos de lista en línea */
+.container-icon {
+    display: flex;
+    align-items: center;
 }
 
-.encabezado .menu a {
-    color: #fff; /* Color blanco para los enlaces */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    font-size: 1em; /* Tamaño de fuente estándar */
-    padding: 5px 10px; /* Espaciado interno para los enlaces */
-    transition: color 0.3s, background-color 0.3s; /* Suaviza los cambios de color */
+.icon-cart {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
 
-.encabezado .menu a:hover {
-    text-decoration: underline; /* Subrayado al pasar el cursor por encima */
-    background-color: #555; /* Fondo gris más claro al pasar el cursor */
-    border-radius: 5px; /* Bordes redondeados para el fondo del enlace */
+.count-products {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-/* Estilos para el banner */
+.cart-total, .cart-empty {
+    margin-top: 10px;
+}
 
-.banner {
+.cart-empty {
     text-align: center;
-
+    font-style: italic;
 }
 
-.banner img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Estilos para la sección de Productos */
-
+/* Estilos de Producto */
 .productos {
     padding: 20px 0;
 }
 
+.productos .row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 
+.productos .h1{
+    
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+   
+
+}
+
+.productos .col-md-4 {
+    margin-bottom: 20px;
+}
 
 .image-container {
-    display: flex;
-    flex-direction: column; /* Mostrar elementos en columna */
-    align-items: center; /* Centrar elementos horizontalmente */
-    margin-bottom: 20px;
-    border: 1px solid #ccc; /* Borde para separar visualmente cada elemento */
-    padding: 10px;
-    max-width: 300px; /* Ajustar el ancho máximo según sea necesario */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
 }
 
 .image-container img {
-    max-width: 100%; /* Imagen dentro del contenedor ajustada al ancho máximo */
-    height: auto; /* Ajuste automático de altura */
-    margin-bottom: 10px; /* Espacio entre imagen y descripción */
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.image-container .description {
-    text-align: center; /* Centrar el texto dentro del contenedor */}
+.description {
+    padding: 10px;
+    text-align: center;
+}
 
 .producto-titulo {
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin: 10px 0;
 }
 
 .producto-precio {
     font-size: 16px;
-    color: green;
+    color: #007bff;
 }
 
 .producto-agregar {
-    background-color: #333;
-    color: #fff;
+    background-color: #28a745;
     border: none;
-    padding: 8px 16px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
-    border-radius: 4px;
 }
 
 .producto-agregar:hover {
-    background-color: #555;
+    background-color: #218838;
 }
 
-/* Estilos para la sección "Sobre Nosotros" */
-
-.sobrenosotros {
+/* Estilos del Carrito */
+.cart-product {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
-}
-h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
-    margin: 0;
-    padding: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
-.left-column {
-    flex: 1;
+.info-cart-product {
+    display: flex;
+    flex-direction: column;
+}
+
+.cantidad-producto-carrito, .titulo-producto-carrito, .precio-producto-carrito {
+    margin: 2px 0;
+}
+
+.icon-close {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Estilos para el Footer (si es necesario) */
+footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
     text-align: center;
+    font-size: 14px;
 }
 
-.right-column {
-    flex: 2;
-    padding-left: 40px;
+/* Media Queries para Responsividad */
+
+/* Dispositivos Móviles */
+@media (max-width: 767px) {
+    .navbar-nav {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+
+    .productos .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productos .col-md-4 {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .description {
+        padding: 5px;
+    }
+
+    .producto-titulo {
+        font-size: 16px;
+    }
+
+    .producto-precio {
+        font-size: 14px;
+    }
+
+    .producto-agregar {
+        font-size: 14px;
+    }
 }
 
-.right-column h2 {
-    font-size: 28px;
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .productos .row {
+        flex-wrap: wrap;
+    }
+
+    .productos .col-md-4 {
+        width: 50%;
+        max-width: 400px;
+    }
+
+    .description {
+        padding: 8px;
+    }
+
+    .producto-titulo {
+        font-size: 17px;
+    }
+
+    .producto-precio {
+        font-size: 15px;
+    }
+
+    .producto-agregar {
+        font-size: 15px;
+    }
+}
+.sobrenosotros {
+    display: flex; /* Utiliza Flexbox para alinear los elementos horizontalmente */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    padding: 10px; /* Espaciado dentro del contenedor */
+    background-color: #f4f4f4; /* Color de fondo del contenedor, opcional */
+    border: 1px solid #ddd; /* Borde del contenedor, opcional */
+  }
+
+  .banner {
+    position: relative; /* Necesario para posicionar elementos dentro del banner */
+    width: 100%; /* Ocupa todo el ancho del contenedor padre */
+    height: 200px; /* Ajusta la altura del banner según tus necesidades */
+    overflow: hidden; /* Asegura que nada se desborde del contenedor */
+  }
+
+  .banner .granja {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 100%; /* La imagen ocupa toda la altura del contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen y recorta si es necesario */
+    display: block; /* Elimina el espacio inferior que podría aparecer */
+  }
+
+  /* Estilo de la columna derecha */
+  .right-column {
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+  }
+
+  .right-column p {
+    margin: 0; /* Elimina márgenes por defecto del párrafo */
+    font-size: 16px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+  }
+
+  /* Ajustes responsivos */
+  @media (max-width: 768px) {
+    .imagen {
+      height: 80px; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+      margin-right: 10px; /* Reduce el margen para pantallas más pequeñas */
+    }
+
+    .right-column p {
+      font-size: 14px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+  }
+  #contactenos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-info {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-
-
-/* Estilos para el pie de página */
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
+.contact-info h2 {
+    margin: 0 0 10px;
 }
 
-footer p {
-    margin: 0;
+.contact-info p {
+    margin: 0 0 20px;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    background-color: var(--clr-main);
+.contact-info ul {
+    list-style: none;
+    padding: 0;
 }
 
-aside {
-    padding: 2rem;
-    padding-right: 0;
-    color: var(--clr-white);
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.contact-info li {
+    margin: 5px 0;
 }
 
-.boton-menu {
-    background-color: transparent;
-    border: 0;
-    color: var(--clr-white);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-weight: 600;
-    padding: 1rem;
-    font-size: .85rem;
+.contact-form {
+    max-width: 600px;
     width: 100%;
 }
-/*
-.main{
-   background-color: black;
-   margin: 1rem;
-   border-radius: 2rem; 
-   padding: 2rem;
 
-}
-   */
-.productos{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-
-}
-.image-container{max-width: 100%;
-    height: auto;
-
+.contact-form h3 {
+    margin: 0 0 10px;
 }
 
-.titulo-principal{
-    color: var();
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-}
-/* Estilos para la sección "Sobre Nosotros" */
-.sobrenosotros {
+.contact-form form {
     display: flex;
-    justify-content: space-around; /* Distribuye las columnas a lo largo del contenedor */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 50px 20px; /* Espaciado interior */
+    flex-direction: column;
 }
 
-/* Estilos para la columna izquierda (imagen) */
-.left-column {
-    flex: 1; /* Ocupa 1 parte del espacio disponible */
-    margin-right: 20px; /* Espacio entre las columnas */
+.contact-form label {
+    margin: 5px 0;
 }
 
-/* Estilos para la columna derecha (texto) */
-.right-column {
-    flex: 2; /* Ocupa 2 partes del espacio disponible */
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-/* Estilo para la imagen */
-.imagen {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px; /* Bordes redondeados para la imagen */
-}
-
-/* Estilos para el título */
-.right-column h2 {
-    font-size: 2.5rem;
-    color: #333; /* Color del texto */
-    margin-bottom: 15px; /* Espaciado inferior */
-}
-
-/* Estilos para el párrafo */
-.right-column p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #666; /* Color del texto */
-}
-.container-icon{
-    position: relative;
-}
-
-.icon-cart{
-    width: 40px;
-    height: 40px;
-    stroke: #000;
-}
-
-.icon-cart:hover{
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-.icon-close{
-    width: 25px;
-    height: 25px;
-}
-
-.icon-close:hover{
-    stroke: red;
-    cursor: pointer;
-}
-.container-cart-products{
-    position: absolute;
-    top: 50px;
-    right: 0;
-
-    background-color: #fff;
-    width: 400px;
-    z-index: 1;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-    border-radius: 10px;
-    
-}
-
-.cart-product{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
-}
-
-
-.cart-product{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-
-    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
-}
-
-.info-cart-product{
-    display: flex;
-    justify-content: space-between;
-    flex: 0.8;
+.contact-form button:hover {
+    background-color: #0056b3;
 }
